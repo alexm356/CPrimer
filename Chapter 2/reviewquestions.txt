@@ -1,0 +1,42 @@
+1. What are the basic modules of a C program called? 
+
+    - functions or subroutines.
+
+2. what is a syntax error? 
+
+    - int n, int n, n; // for declaration
+
+3. Semantic error
+
+    - int n, a;
+
+
+4. Prepared following program, fix it: 
+
+
+#include <stdio.h>
+
+int main(){ /* this prints numbers of weeks in a year */
+
+    int s;
+
+    s = 56;
+
+    printf("There are %d weeks in a year.");
+
+    return 0;  
+
+}
+
+5. Assuming that each of the following ex are part of a complete program, what will each one print?
+
+a.  printf("Baa Baa Black sheep.");
+    printf("Have you any wool?\n");
+
+
+
+b.
+
+c.
+
+d.
