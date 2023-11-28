@@ -1,0 +1,8 @@
+a. int %d
+b.
+c. char %c
+d. float %u?
+e. char ?
+f. float %f
+g. 
+h. float %f
