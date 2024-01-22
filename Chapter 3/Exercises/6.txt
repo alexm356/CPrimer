@@ -1,8 +1,8 @@
 a. int %d
-b.
+b. int, %x, %#x
 c. char %c
-d. float %u?
-e. char ?
+d. double %e
+e. char %c
 f. float %f
-g. 
+g. long %ld
 h. float %f

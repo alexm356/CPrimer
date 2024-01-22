@@ -1,4 +1,4 @@
-1. int
-2. float - double
+1. unsigned int
+2. unsigned float - double
 3. char
-4. int
+4. unsigned int

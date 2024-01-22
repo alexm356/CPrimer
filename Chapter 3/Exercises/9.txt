@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(){
+
+    char ch = '\r';
+
+    char ch1 = '13'
+
+    char ch2 = '015'
+
+    char ch3 = '0xd'
+    //escape -/r
+    //decimal value
+    //octal character constant
+    //hex character constant
+
+}

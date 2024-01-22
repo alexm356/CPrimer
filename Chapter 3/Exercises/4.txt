@@ -1,0 +1,5 @@
+a. char - backspace
+b. int - value 1066
+c. float 
+d. int -hex - 
+e. float 

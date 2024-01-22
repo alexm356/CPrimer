@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include <string.h> // for strlen()
 
 #define DENSITY 62.4 // density in lbs per cu feet
 

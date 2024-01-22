@@ -1,0 +1,96 @@
+1. program ends early. the input reaches a whitespace which it does not expect, and only recognizes first 4 letters of input.
+
+2.
+
+a.
+b. printf("He sold the painting for $%2.2f.\n", 2.345e2); $02.35
+c.
+d.
+e. printf("%c%c%c\n", 'H', 105, '\41');
+f.
+g.
+h. #define Q "His Hamlet was funny without being vulgar."
+i. printf("%s\nhas %d characters.\n", Q, strlen(Q));
+j.
+k.
+l. printf("Is %2.2e the same as %2.2f?\n", 1201.0, 1201.0);
+//1.20e+03
+
+//1201.00
+4.
+
+#include <stdio.h>
+#include <string.h>
+
+#define B "booboo"
+#define X 10
+
+int main(void)
+{
+ int age;
+ char name[X];
+
+ printf("Please enter your first name.");
+ scanf("%s", name);
+ printf("All right, %c, what's your age?\n", name);
+ scanf("%d", &age);
+ int xp = age + X;
+ printf("That's a %s! You must be at least %d.\n", B, xp);
+ rerun 0;
+}
+
+5.Suppose a program starts as follows:
+
+#define BOOK "War and Peace"
+
+int main(void)
+{
+ float cost =12.99;
+ float percent = 80.0;
+
+ 6.What conversion specification would you use to print each of the following?
+
+a. A decimal integer with a field width equal to the number of digits 
+
+
+b. A hexadecimal integer in the form 8A in a field width of 4
+
+
+c. A floating-point number in the form 232.346 with a field width of 10
+
+
+d. A floating-point number in the form 2.33e+002 with a field width of 12
+
+
+e. A string left-justified in a field of width 30
+
+7.Which conversion specification would you use to print each of the following?
+a. An unsigned long integer in a field width of 15
+b. A hexadecimal integer in the form 0x8a in a field width of 4
+c. A floating-point number in the form 2.33E+02 that is left-justified in a field
+width of 12
+d. A floating-point number in the form +232.346 in a field width of 10
+e. The first eight characters of a string in a field eight characters wide
+
+8.What conversion specification would you use to print each of the following?
+a. A decimal integer having a minimum of four digits in a field width of 6
+b. An octal integer in a field whose width will be given in the argument list
+c. A character in a field width of 2
+d. A floating-point number in the form +3.13 in a field width equal to the
+number of characters in the number
+e. The first five characters in a string left-justified in a field of width 7
+
+9.For each of the following input lines, provide a scanf() statement to read it. Also
+declare any variables or arrays used in the statement
+a. 101
+b. 22.32 8.34E–09
+c. linguini
+d. catch 22
+e. catch 22 (but skip over catch)
+
+10. What is whitespace?
+
+11.Suppose that you would rather use parentheses than braces in your programs.
+How well would the following work?
+#define ( {
+#define ) }

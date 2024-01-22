@@ -1,0 +1,4 @@
+a. newline
+b. backslash
+c. double quote
+d. horizontal tab

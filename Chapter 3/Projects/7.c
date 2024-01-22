@@ -13,7 +13,7 @@ int main(){
 
     conversion = centimeter * height;
 
-    print("Height in centimeters: %lf", conversion);
+    printf("Height in centimeters: %lf", conversion);
 
     return 0;
 

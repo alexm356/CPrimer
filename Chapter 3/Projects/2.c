@@ -2,9 +2,7 @@
 
 int main(){
 
-
     char value;
-
     int a;
 
     printf("Enter ascii code value: ");

@@ -11,4 +11,6 @@ int main(){
     cows = legs / 4;
 
     printf("That implies there are %f cows."\n, cows);
+
+    return 0;
 }

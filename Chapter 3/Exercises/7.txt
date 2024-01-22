@@ -1,0 +1,7 @@
+a. int %#o
+b. long double %Le
+c. char %c
+d. long int %ld
+e. char %c
+f. float %f
+g. int %x
