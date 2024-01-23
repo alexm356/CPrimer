@@ -3,11 +3,18 @@
 #include <stdio.h>
 int main(void)
 
+//sizeof returns size in bits of its operand.
+
+/*
+
+sizeof returns value of type size_t. This is unsigned int type.
+
+*/
+
 {
- int n = 0;
- size_t intsize;
- intsize = sizeof (int);
- printf("n = %d, n has %zd bytes; all ints have %zd bytes.\n",
- n, sizeof n, intsize );
- return 0;
+    int n = 0;
+    size_t intsize;
+    intsize = sizeof (int);
+    printf("n = %d, n has %zd bytes; all ints have %zd bytes.\n", n, sizeof n, intsize );
+    return 0;
 }
