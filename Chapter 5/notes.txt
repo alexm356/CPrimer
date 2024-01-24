@@ -1,0 +1,2 @@
+A compound statement is two or more statements grouped together by enclosing them in braces; it is also called a block.
+
