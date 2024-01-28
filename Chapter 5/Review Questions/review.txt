@@ -1,28 +1,31 @@
 1. Assume all variables are of type int. Find the value of each of the following
 variables:
-a. x = (2 + 3) * 6;
-b. x = (12 + 6)/2*3;
-c. y = x = (2 + 3)/4;
-d. y = 3 + 2*(x = 7/2);
+a. x = (2 + 3) * 6; x = 30
+b. x = (12 + 6)/2*3; x = 27
+c. y = x = (2 + 3)/4; x = 1, y = 1
+d. y = 3 + 2*(x = 7/2); y = 9
 
 2. Assume all variables are of type int. Find the value of each of the following
 variables:
-a. x = (int) 3.8 + 3.3;
-b. x = (2 + 3) * 10.5;
-c. x = 3 / 5 * 22.0;
-d. x = 22.0 * 3 / 5;
+a. x = (int) 3.8 + 3.3; x = 6
+b. x = (2 + 3) * 10.5; x = 52
+c. x = 3 / 5 * 22.0; x = 13
+d. x = 22.0 * 3 / 5; x = 13
 
 3. You suspect that there are some errors in the next program. Can you find them?
 int main(void)
 {
- int i = 1,
- float n;
- printf("Watch out! Here come a bunch of fractions!\n");
- while (i < 30)
- n = 1/i;
- printf(" %f", n);
- printf("That's all, folks!\n");
- return;
+    int i = 1;
+    float n;
+
+    printf("Watch out! Here come a bunch of fractions!\n");
+    while (i < 30){
+    n = 1/i;
+    printf("%f", n);
+    n++;
+    }
+    printf("That's all, folks!\n");
+    return 0;
 }
 
 4. Here's an alternative design for Listing 5.9. It appears to simplify the code by
@@ -89,6 +92,15 @@ int main(void)
  printf("\n");
  return 0;
 }
+1
+2
+3
+4
+5
+6
+7
+8
+9
 
 8. Modify the last program so that it prints the letters a through g instead. 
 
@@ -129,16 +141,42 @@ int main(void)
  return 0;
 }
 
+Will print string 5 times
+
+
+
 11.Construct statements that do the following (or, in other terms, have the following
 side effects):
 a. Increase the variable x by 10.
+
+
+
 b. Increase the variable x by 1.
+
+x++;
+
 c. Assign twice the sum of a and b to c.
+
+
 d. Assign a plus twice b to c.
 
 12.Construct statements that do the following:
 a. Decrease the variable x by 1.
+
+(x--) 
+
 b. Assigns to m the remainder of n divided by k.
+
+m = (n % k )
+
 c. Divide q by b minus a and assign the result to p.
+
+p = (b - a) / q 
+
+
 d. Assign to x the result of dividing the sum of a and b by the product of c
 and d.
+
+x = (a+b) / (c*d)
+
+
