@@ -5,9 +5,12 @@ int main(void)
     long num;
     long sum = 0L; /* initialize sum to zero */
     int status;
+
     printf("Please enter an integer to be summed ");
     printf("(q to quit): ");
-    status = scanf("%ld", &num);
+
+    status = scanf("%ld", &num);  // uses scanf return value to report on success of reading integer.
+
     while (status == 1) /* == means "is equal to" */
     {
         sum = sum + num;
