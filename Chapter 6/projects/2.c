@@ -1,21 +1,14 @@
 #include <stdio.h>
 
-#define ROWS 5
-
-#define MAX 5
-
-
 int main(){
 
-    int sum;
+    int array[5];
 
-    char ch = '$';
-
-    for(int i = 0; i <= ROWS; i++){
-        printf("\n");
-        for(int i = 0; i <= MAX; i++){
-            printf("%c", ch);
-            sum;
-        }
+    for(int i = 1; i <= 5; i++)
+    {
+        array[i] = 36;
+        for(int j = 1; j <= i; j++)
+            printf(" %c", array[j]);
+            printf("\n");
     }
 }
