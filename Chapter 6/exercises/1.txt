@@ -1,3 +1,6 @@
+
+
+
 1. Find the value of quack after each line.
           int quack = 2)|
           quack += 5;
@@ -10,7 +13,25 @@
 printf("%3d", value);
 
 3. Represent each of the following test conditions:
-a. x is greater than 5.
-b. scanf() attempts to read a single double (called x) and fails.
-c. x has the value 5.
-189
+    a. x is greater than 5.
+    b. scanf() attempts to read a single double (called x) and fails.
+    c. x has the value 5.
+
+4. Represent each of the following test conditions:
+    a. scanf() succeeds in reading a single integer.
+    b. x is not 5.
+    c. x is 20 or greater.
+
+5. You suspect that the following program is not perfect. What errors can you find?
+
+#include <stdio.h>
+int main(void)
+{ 
+ int i, j, list[10]; /* line 4 */
+ for (i = 1; i <= 10; i++) /* line 6 */
+ { 
+    list[i] = 2*i + 3; /* line 8 */
+    for (j = 1; j > = i; j++) /* line 9 */
+        printf(" %d", list[j]); /* line 10 */
+        printf("\n"); /* line 11 */
+} /* line 12 */

@@ -7,11 +7,11 @@ int main(){
 
     char lets[7] = "ABCDEFG";
     
-    for(int i = 1; i <= 6; i++){
-
+    for(int i = 5; i >= 0; i--){
+        printf("\n");
         for(int j = 5; j >= i; j--){
 
-            printf(" %c\n", lets[j]);
+            printf(" %c", lets[j]);
         
         }
     }
