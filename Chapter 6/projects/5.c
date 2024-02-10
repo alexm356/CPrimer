@@ -1,15 +1,34 @@
+/**
+ * \file C06E05.c
+ * \author Henrik Samuelsson
+ */
 #include <stdio.h>
+#include <stdlib.h>
 
-int main(){
+/**
+ * \brief Prints a mathematical table with square and cube calculations of
+ *        integers.
+ * \return 0 upon successful execution.
+ */
+int main(void)
+{
+	int min, max, index;
+	int square, cube;
 
-    int lower, upper;
+	// Request input about the table from the user.
+	printf("Enter lower limit: ");
+	scanf("%d", &min);
+	printf("Enter upper limit: ");
+		scanf("%d", &max);
 
-    printf("Enter lower and upper limits of table: ");
-    scanf("%d %d", &lower, &upper);
+	// Do calculations and print the result line by line.
+	printf("%7s %7s %7s\n", "num", "square", "cube");
+	for(index = min; index <= max; index++)
+	{
+		square = index * index;
+		cube = index * square;
+		printf("%7d %7d %7d\n", index, square, cube);
+	}
 
-    for(int i = lower; i <= upper; i++){
-
-        printf("%d %d %d\n", lower, lower * lower, lower * lower * lower);
-        lower += 2;
-    }
+	return EXIT_SUCCESS;
 }
