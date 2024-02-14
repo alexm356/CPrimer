@@ -5,10 +5,9 @@
 #define RATE3 0.20971 /* rate for over 680 kwh */
 #define BREAK1 360.0  /* first breakpoint for rates */
 #define BREAK2 680.0  /* second breakpoint for rates */
-#define BASE1 (RATE1 * BREAK1)
-/* cost for 360 kwh *
-#define BASE2 (BASE1 + (RATE2 * (BREAK2 - BREAK1)))
-/* cost for 680 kwh */
+#define BASE1 (RATE1 * BREAK1) /* cost for 360 kwh */
+#define BASE2 (BASE1 + (RATE2 * (BREAK2 - BREAK1)))/* cost for 680 kwh */
+
 int main(void)
 {
     double kwh;  /* kilowatt-hours used */
