@@ -20,9 +20,10 @@ int main(){
       characterCount++;
       if(c == '\n')
         newLinesCount++;
+
       if(isspace(c))
         spaceCount++;
-    prev = c;   
+        
     }
     printf("characters = %d, spaces = %d, lines = %d, ", characterCount, spaceCount, newLinesCount);
 
