@@ -7,12 +7,12 @@ int main(void)
  int oc = 0; /* other char count
  while ((ch = getchar()) != '#')
  {
- if ('a' <= ch >= 'z')
- lc++;
- else if (!(ch < 'A') || !(ch > 'Z'))
- uc++;
- oc++;
- }
- printf(%d lowercase, %d uppercase, %d other, lc, uc, oc);
- return 0;
+    if ('a' <= ch >= 'z')
+    lc++;
+    else if (!(ch < 'A') || !(ch > 'Z'))
+    uc++;
+    oc++;
+}
+    printf(%d lowercase, %d uppercase, %d other, lc, uc, oc);
+    return 0;
 }

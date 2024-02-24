@@ -8,14 +8,21 @@ int main(){
 
     int charcount;
 
+    char prev;
+
+    char current;
+
 
     
     printf("Enter text (# to terminate): \n");
     while((ch = getchar()) != STOP)
     {
-        if (ch == 'e' && ch == 'i')
+        
+        if (prev == 'e' && ch == 'i'){
             charcount++;
+        }
+        prev = ch;    
     }
-    printf("There are %d non-quote characters.\n", charcount);
+    printf("Sequence occurs %d times.\n", charcount);
     return 0;
 }

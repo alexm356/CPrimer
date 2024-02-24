@@ -12,10 +12,10 @@ int main(void)
 
         printf("You are very tall for your weight.\n");
         
-    }else if (height < 72 && > 64){
+    }else if (height < 72 && height > 64){
 
         printf("You are tall for your weight.\n");
-    }else if (weight > 300 && ! (weight <= 300) && height < 48){\
+    }else if (weight > 300 && ! (weight <= 300) && height < 48){
 
     }
  
