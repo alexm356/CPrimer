@@ -1,0 +1,6 @@
+1. putchar(getchar()) is a valid expression; what does it do? Is getchar(putchar()) also valid?
+
+
+putchar(getchar()) will print the result of getchar
+
+getchar(putchar()) not valid

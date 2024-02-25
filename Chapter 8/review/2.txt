@@ -1,0 +1,18 @@
+What would each of the following statements accomplish?
+
+    a. putchar('H');    
+
+    print H
+    
+    b. putchar('\007');
+
+    bell ANSI
+    
+    c. putchar('\n');
+
+    print newline
+    
+    d. putchar('\b');
+
+    print backspace
+
