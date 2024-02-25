@@ -8,10 +8,10 @@ int main(void)
     printf("Enter a character and two integers:\n");
     while ((ch = getchar()) != '\n')
     {
-        if (scanf("%d %d", &rows, &cols) != 2)
+        if (scanf("%d %d", &rows, &cols) != 2) // break if one or both input values are not ints or if EOF encountered.
             break;
         display(ch, rows, cols);
-        while (getchar() != '\n')
+        while (getchar() != '\n') // while disposes characters following scanf input, including newline. prepare loop to read first character of next line.
             continue;
         printf("Enter another character and two integers;\n");
         printf("Enter a newline to quit.\n");

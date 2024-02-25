@@ -7,5 +7,7 @@ int main(){
     char ch = 'a';
 
 
-    getchar(putchar());
+    getchar(getchar() != EOF ){
+        
+    }
 }

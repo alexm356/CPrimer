@@ -1,0 +1,3 @@
+8.
+
+By intermixing numeric input with character input on a buffered system, you risk supporting undefined behavior. Scanf with conversion specification %c, %d can be difficult to use.

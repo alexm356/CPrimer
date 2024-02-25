@@ -1,0 +1,1 @@
+EOF is the signal for programs to terminate the reading of a file. EOF returns an int, 

@@ -1,6 +1,7 @@
 /* showchar1.c -- program with a BIG I/O problem */
 #include <stdio.h>
 void display(char cr, int lines, int width);
+
 int main(void)
 {
     int ch;         /* character to be printed */
