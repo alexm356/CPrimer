@@ -20,9 +20,9 @@ int main(void)
 
     printf("Watch out! Here come a bunch of fractions!\n");
     while (i < 30){
-    n = 1/i;
-    printf("%f", n);
-    n++;
+        n = 1/i;
+        printf("%f", n);
+        n++;
     }
     printf("That's all, folks!\n");
     return 0;

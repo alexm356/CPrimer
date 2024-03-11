@@ -13,9 +13,11 @@ int main(void)
     return 0;
 }
 
+*/
+
 
 //Go west, youn
-
+/*
 #include <stdio.h>//b
 int main(void)
 {
@@ -29,7 +31,8 @@ int main(void)
     }
     return 0;
 }
-//Hp!xftu-!zpvo
+
+//Hpx
 
 */
 
@@ -40,14 +43,14 @@ int main(void)
     char ch;
 
     do {
-    scanf("%c", &ch);
-    printf("%c", ch);
+        scanf("%c", &ch);
+        printf("%c", ch);
     } while ( ch != 'g' );
     return 0;
 }
 
-//Go west, young
 */
+
 
 
 #include <stdio.h>
@@ -62,5 +65,7 @@ int main(void)
     return 0;
 }
 
-//$o west, youn
+
+
+
 

@@ -11,8 +11,11 @@ int main(void)
     
     return 0;
 }
+
+//hi hi hi bye bye bye bye bye
 */
 
+/*
 #include <stdio.h>
 int main(void)
 {
@@ -23,6 +26,7 @@ int main(void)
     printf("%c", ch);
     return 0;
 }
-// A C G 
-
+// A C G M 
 */
+
+

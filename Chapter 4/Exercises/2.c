@@ -10,7 +10,7 @@ int main(){
 
     printf("%s\n", name);
 
-    printf("%.20s");
+    printf("%.20s", name);
 
     printf("%.20s", name);
 

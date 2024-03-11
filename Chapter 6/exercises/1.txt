@@ -3,24 +3,44 @@
 
 1. Find the value of quack after each line.
           int quack = 2)|
-          quack += 5;
-          quack *= 10;
-          quack -= 6;
-          quack /= 8;
-          quack %= 3;
+          quack += 5; 7
+          quack *= 10; 70
+          quack -= 6; 64
+          quack /= 8; 8
+          quack %= 3; 2
 
-2. Given that value is an int, what output would the following loop produce? for ( value = 36; value > 0; value /= 21.
-printf("%3d", value);
+2. Given that value is an int, what output would the following loop produce? 
+
+for ( value = 36; value > 0; value /= 21.
+    printf("%3d", value);
+
+    1 
 
 3. Represent each of the following test conditions:
     a. x is greater than 5.
+
+    while (x > 5)
+
     b. scanf() attempts to read a single double (called x) and fails.
+
+    while (scanf("%lf, &x) != 1)
+
     c. x has the value 5.
+
+    while (x == 5)
 
 4. Represent each of the following test conditions:
     a. scanf() succeeds in reading a single integer.
+
+    while(scanf(%d, &x) == 1)
+
     b. x is not 5.
+
+    while (x != 5
+    )
     c. x is 20 or greater.
+
+    while (x >= 20)
 
 5. You suspect that the following program is not perfect. What errors can you find?
 

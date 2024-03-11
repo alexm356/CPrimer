@@ -2,13 +2,10 @@
 #include <stdio.h>
 int main(void) /* finds sum of first 20 integers */
 {
-    int count, sum; /* declaration statement */
-    
-    int total;
+    int count, sum, total; /* declaration statement */
 
     printf("Enter count: ");
     scanf("%d", &total);
-
 
     sum = 0; /* ditto */
     while (count++ < total) /* while */

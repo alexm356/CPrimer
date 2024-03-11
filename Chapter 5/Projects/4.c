@@ -1,29 +1,29 @@
 #include <stdio.h>
 
-#define FEET 0.0328084
+#define CM_INCH 2.54
+#define INCH_FEET 12
 
-#define INCHES 0.393701
+
 
 int main(){
 
-    float centi;
+    float heigthsCm, heightInches, remainder;
 
     int feet;
     
-    float inches;
-
 
     printf("Enter a height in centimeteres: ");
-    scanf("%f", &centi);
+    scanf("%f", &heigthsCm);
 
-    while(centi > 0){
+    while(heigthsCm > 0){
 
-        feet = centi * FEET;
+        heightInches = heigthsCm / CM_INCH;
+        feet = heightInches / INCH_FEET;
+        remainder = heightInches - feet * INCH_FEET;
 
-        inches = centi * INCHES / 6;
+        printf("%.1f cm = %d feet, %.1f inches\n", heigthsCm, feet, remainder);
 
-        printf("%.1f cm = %d feet, %f inches\n", centi, feet, inches);
         printf("Enter next value (<=0 to quit):\n");
-        scanf("%d", &centi);
+        scanf("%f", &heigthsCm);
     }
 }

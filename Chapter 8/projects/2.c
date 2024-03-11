@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <ctype.h>
+
 
 int main(){
 
@@ -9,7 +11,16 @@ int main(){
     int decimalValue;
 
 
-    while (getchar() != EOF){
+    while ((ch = getchar()) != EOF){
+
+        if(ch == '\n'){
+
+        }
+        else if(ch == '\t'){
+
+        }else if (ch == ' '){
+
+        }else if()
 
         printf("Character: %c, Decimal %d", putchar(ch), decimalValue);
     }

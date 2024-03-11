@@ -12,7 +12,7 @@ int main(){
     printf("Enter your last name: ");
     scanf("%s", lastName);
 
-    printf("%s %s\n", firstName, lastName);
-    printf("%d %d",strlen(firstName), strlen(lastName));
+    printf("%4s %9s\n", firstName, lastName);
+    printf("%4d %9d",strlen(firstName), strlen(lastName));
     
 }

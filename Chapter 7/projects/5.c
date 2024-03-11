@@ -25,32 +25,22 @@ int main(){
     printf("Enter int: ");
     scanf("%d", &inputs);
 
-    switch(inputs)
+    int switchas = inputs % 2;
+
+    switch(switchas)
     {
-        case (% 2 == 0):
-    }
+        case 0: 
 
-    do{
-
-        input = inputs;
-
-        if (input % 2 == 0){
-            evenCount++;
+        evenCount++;
             evenSum += input;
             scanf("%d", &inputs);
-        }else if (input  % 2 == 1){
-            oddCount++;
+
+        case 1:
+
+        oddCount++;
             oddSum += input;
             scanf("%d", &inputs);
-        }else if (input == 0){
-            break;
-        }else{
-            printf("Incorrect Input!");
-            break;
-            
-        }
-
-    } while (inputs > 0);
+    }
 
     evenResult = evenSum / evenCount;
 

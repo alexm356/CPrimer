@@ -2,14 +2,14 @@
 
 int main(){
 
-    int age;
+    double age;
 
-    float ageSeconds = 3.156e7;
+   double ageSeconds = 3.156e7;
 
     double finalAge;
 
     printf("What is your age: ");
-    scanf("%d", &age);
+    scanf("%lf", &age);
 
     finalAge = age * ageSeconds;
 

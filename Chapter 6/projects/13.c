@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/*
+
+read in 2 doubles, set elements of second array to cumulative totals of first array.
+
+*/
+
 int main(){
 
     double a[8];
@@ -12,21 +18,12 @@ int main(){
         scanf("%lf", &a[i]);
     }
 
-
-
     for(int i = 0; i < 8; i++){
-
-        
-
         for(int j = 0; j <= i; j++){
-
             sum += a[j];
-           
         }
-
         b[i]= sum;
         sum = 0;
-         
     }
 
     for(int i = 0; i <= 8; i++){

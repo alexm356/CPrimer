@@ -15,18 +15,58 @@ current tax law.
 
 
 #include <stdio.h>
+#include <stdbool.h>
+
+#define TRUE 1
+#define FALSE 0
 
 #define PAY 10.00
+#define TIMEHALF 15.00
 
 int main(){
 
+    double grossPay;
 
-    double hours;
+    double hours, netPay, taxes;
+    
+    bool othr;
 
+    double 
 
     printf("Enter the number of hours worked in a week: ");
     scanf("%lf", &hours);
 
+    if (hours > 40){
+        othr = TRUE;
+    }
+    else {
+        othr = FALSE;
+    }
+
+    if (othr == TRUE){
+        grossPay = hours * TIMEHALF;
+    }else {
+        grossPay = hours * PAY;
+    }
+
+    //
+
+
+    /*
+    
+    if (grossPay <= 300.00){
+        netPay = grossPay * .15;
+    }
+
+    if (grossPay > 300){
+
+    }
+    */
+
     printf("Gross pay: %lf", hours * PAY);
+
+    printf("Taxed Amount: ", taxes);
+
+    printf("Net Pay: %lf", netPay);
 }
 

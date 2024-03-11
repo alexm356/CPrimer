@@ -10,3 +10,45 @@ can use appropriate classification functions from the ctype.h library.
 
 
 */
+
+#include <stdio.h>
+#include <ctype.h>
+
+int main(){ 
+
+    int upperCount = 0;
+
+    int lowerCount = 0;
+
+    char ch;
+
+    //isalpha()
+
+    while((ch = getchar()) != EOF)
+    {
+        if (isalpha(ch) == 1){
+
+            if (toupper(ch) == ch){
+                ++upperCount;
+            }
+            else{
+                continue;
+            }
+        }
+        else if (isalpha(ch) == 2){
+
+            if (ch == tolower(ch)){
+                ++lowerCount;
+
+            }
+        }
+
+        else {
+            continue;
+        }
+    }
+
+    printf("Uppercase chars: %d, lowercase chars: %d", upperCount, lowerCount);
+
+
+}

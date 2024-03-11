@@ -17,10 +17,16 @@ int main(){
 
     printf("Enter text (# to terminate): \n");
 
-    while((c = getchar()) != STOP){
+    while((c = getchar()) != STOP && c != '\n'){
 
-
+        printf(" Char : %c\n", c);
+        printf("Decimal code: %d\n", c);
+        continue;
     }
 }
 
- 
+/*
+
+while (charCount)
+
+*/

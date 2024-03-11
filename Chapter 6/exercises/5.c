@@ -2,7 +2,8 @@
 int main(void)
 { 
  int i, j, list[10]; /* line 4 */
- for (i = 1; i <= 10; i++) /* line 6 */
+
+ for (i = 1; i <= 9; i++) /* line 6 */
  { 
     list[i] = 2 * i + 3; /* line 8 */
     

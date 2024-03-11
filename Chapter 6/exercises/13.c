@@ -11,6 +11,6 @@ int main(){
 
 long square(int value){
 
-    return value * value;
+    return ((long)value) * value;
 
 }

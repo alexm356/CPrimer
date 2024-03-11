@@ -13,21 +13,22 @@ the number of all other characters read.
 int main(){
 
     char c;
-    char prev; 
+    
 
     int spaceCount = 0; //count spaces
     int newLinesCount = 0; //count newlines
     int characterCount = 0; //number of characters
 
     printf("Enter text (# to terminate): \n");
-    prev = '\n';
     while((c = getchar()) != STOP)
     {
-      characterCount++;
+      if (c != '\n' && c != STOP)
+        characterCount++;
+        
       if(c == '\n')
         newLinesCount++;
 
-      if(isspace(c))
+      if(isspace(c) && c != '\n')
         spaceCount++;
         
     }

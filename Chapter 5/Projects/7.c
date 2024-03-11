@@ -5,9 +5,7 @@ float cube(float values);
 
 int main(){
     
-    float value;
-
-    float result;
+    float value, result;
 
     printf("Enter a float: ");
     scanf("%f", &value);
@@ -19,10 +17,6 @@ int main(){
 
 float cube(float values){
 
-    float final;
-
-    final = values * values * values;
-
-    return final;
+    return values * values * values;
 
 }
