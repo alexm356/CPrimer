@@ -24,48 +24,49 @@ current tax law.
 #define TIMEHALF 15.00
 
 int main(){
-
-    double grossPay;
-
-    double hours, netPay, taxes;
     
-    bool othr;
+    double hours, netPay, taxes, grossPay, othr;
 
-    double 
+    double overtimeHours;
 
+    double tax1, tax2, tax3, taxFinal;
+    
     printf("Enter the number of hours worked in a week: ");
     scanf("%lf", &hours);
 
     if (hours > 40){
         othr = TRUE;
+        overtimeHours = hours - 40;
     }
     else {
         othr = FALSE;
     }
 
     if (othr == TRUE){
-        grossPay = hours * TIMEHALF;
+        grossPay = (hours * PAY) + (overtimeHours * TIMEHALF);
     }else {
         grossPay = hours * PAY;
     }
 
+
+    while (grossPay > 0){
+
+        tax1 = grossPay * 0.15;
+        grossPay -= 300;
+        tax2 = grossPay * .20;
+        grossPay -= 150;
+        tax3 = grossPay * .25;
+    }
     //
 
+    taxFinal = tax1+ tax2 + tax3;
 
-    /*
-    
-    if (grossPay <= 300.00){
-        netPay = grossPay * .15;
-    }
+    netPay = grossPay - taxFinal;
 
-    if (grossPay > 300){
 
-    }
-    */
+    printf("Gross pay: %lf", grossPay);
 
-    printf("Gross pay: %lf", hours * PAY);
-
-    printf("Taxed Amount: ", taxes);
+    printf("Taxed Amount: %lf", taxFinal);
 
     printf("Net Pay: %lf", netPay);
 }
