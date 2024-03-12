@@ -13,7 +13,13 @@ specify the tax category and the taxable income and that then calculates the tax
 Use a loop so that the user can enter several tax cases.
 */
 
+#define SINGLE 17850
+#define HOH 23900
+#define MARRIEDJOINT 29750
+#define MARRIEDSEP 14875
+
 #include <stdio.h>
+#include <ctype.h>
 
 int main(){
 
@@ -21,36 +27,64 @@ int main(){
 
     double income;
 
+    double result;
+
     printf("Enter income: ");
     scanf("%lf", &income);
 
-    printf("\nSpecify Tax Category");
-    printf("1. Single");
-    printf("2. Single");
-    printf("3. Single");
-    printf("4. Single");
-    printf("q. quit");
+    printf("\nSpecify Tax Category: \n");
+    printf("1. Single\n");
+    printf("2. Head of Household\n");
+    printf("3. Married, Joint\n");
+    printf("4. Married, Separate\n");
+    printf("q. quit\n");
 
-
-    while (choice != 'q'){
-        
+    printf("Enter Choice: ");
+    while (scanf("%d", &choice) == 1)
+    {
+        if (isdigit(choice) == 0)
+        {
         switch(choice){
 
             case 1: 
+                    printf("1. Single\n");
 
+                    result = (17850 * 0.15) + (0.28 *(income - SINGLE));
+
+                    printf("Tax: %lf\n", result);
+                    break;
             case 2:
+                    printf("2. Head of Household\n");
 
+                    result = (23900 * 0.15) + (0.28 *(income - HOH));
+
+                    printf("Tax: %lf\n", result);
+                    break;
             case 3: 
+                    printf("3. Married, Joint\n");
 
+                    result = (29750 * 0.15) + (0.28 *(income - MARRIEDJOINT));
+
+                    printf("Tax: %lf\n", result);
+                    break;
             case 4: 
+                    printf("4. Married, Separate\n");
 
-            default: printf("Enter a category: ");
+                    result = (14875 * 0.15) + (0.28 *(income - MARRIEDSEP));
 
+                    printf("Tax: %lf\n", result);
 
+                    break;
+
+            default: printf("Enter a category: \n");
+                    break;
+            }
+        }
+        else{
+        printf("Incorrect Input!");
         }
 
-
-
+        printf("Enter another number or q to quit: \n");
     }
 
 }

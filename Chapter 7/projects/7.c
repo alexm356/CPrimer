@@ -27,7 +27,7 @@ int main(){
     
     double hours, netPay, taxes, grossPay, othr;
 
-    double overtimeHours;
+    double overtimeHours, grossPayFinal;
 
     double tax1, tax2, tax3, taxFinal;
     
@@ -44,30 +44,40 @@ int main(){
 
     if (othr == TRUE){
         grossPay = (hours * PAY) + (overtimeHours * TIMEHALF);
+        grossPayFinal = grossPay;
     }else {
         grossPay = hours * PAY;
+        grossPayFinal = grossPay;
     }
 
 
     while (grossPay > 0){
 
-        tax1 = grossPay * 0.15;
-        grossPay -= 300;
-        tax2 = grossPay * .20;
-        grossPay -= 150;
-        tax3 = grossPay * .25;
+        if (grossPay >= 300){
+            tax1 = 300 * 0.15;
+            grossPay -= 300;
+        }
+        if(grossPay >= 450)
+            tax2 = 150 * .20;
+            grossPay -= 150;
+
+        if (grossPay > 0){
+            tax3 = grossPay * .25;
+        }
     }
     //
 
-    taxFinal = tax1+ tax2 + tax3;
+    printf("GP: %lf\n", tax3);
 
-    netPay = grossPay - taxFinal;
+    taxFinal = tax1 + tax2 + tax3;
+
+    netPay = grossPayFinal - taxFinal;
 
 
-    printf("Gross pay: %lf", grossPay);
+    printf("Gross pay: %lf\n", grossPayFinal);
 
-    printf("Taxed Amount: %lf", taxFinal);
+    printf("Taxed Amount: %lf\n", taxFinal);
 
-    printf("Net Pay: %lf", netPay);
+    printf("Net Pay: %lf\n", netPay);
 }
 

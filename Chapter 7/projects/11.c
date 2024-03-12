@@ -18,6 +18,9 @@ all the charges.
 */
 
 #include <stdio.h>
+#include <ctype.h>
+
+void print_choice();
 
 #define ART 1.25
 #define BEET 0.65
@@ -26,43 +29,99 @@ all the charges.
 #define MIDSHIP 10.00
 #define HIGHSHIP 8.00
 
+#define DISCOUNT .05
+
 int main(){ 
 
     char ch;
-
     float totalCost, totalCharges, discoun;
+    int artichokes, beets, carrots, discount;
 
-    int artichokes, beets, carrots;
+    double artFinal, carFinal, beetFinal;
 
-    while ((ch = getchar()) != '#'){
+    double orderCost, shippingCost, totalPounds;
 
-        switch(ch){
+    print_choice();
 
-            case 'a':
+    printf("Enter your order: ");
 
-            printf("Enter artichokes: ")
-
-
-            case 'b':
-
-            printf("Enter beets: ")
-
-            case 'c':
-
-            printf("Enter carrots: ")
-
-
-            case 'q': 
-
-            printf("Quitting!");
-            break;
-
-            default: 
+    while ((ch = getchar()) != '#')
+    {
+        if('\n' == ch){
+            continue;
         }
+        
+        if (islower(ch)) //lowercase only
+        {
+            switch(ch){
+                case 'a':
+                    printf("Enter artichokes: ");
+                    scanf("%d", &artichokes);
+                    break;
+                case 'b':
+                    printf("Enter beets: ");
+                    scanf("%d", &beets);
+                    break;
+                case 'c':
+                    printf("Enter carrots: ");
+                    scanf("%d", &carrots);
+                    break;
+                case 'q': 
+                    printf("Quitting!");
+                    break;
+                default: printf("Stumper!");
+                        break;
+            }    
+        }
+        else{
+            printf("lowercase only");
+        }
+        while (getchar() != '\n')
+            continue; /* skip rest of input line */
+        printf("Please type another letter or a #.\n");
     }
 
-    printf("Cost per pound:  ");
-    printf("Pounds ordered: ");
-    printf("Cost of order: ");
+    artFinal = artichokes * ART;
+    beetFinal = beets * BEET;
+    carFinal = carrots * CARROT;
 
+    orderCost = artFinal + beetFinal + carFinal;
+
+    if(orderCost > 100.00){
+        discount = 1; 
+    }else{
+        discount = 0;
+    }
+
+    if (totalPounds <= 5){
+        shippingCost = 3.50;
+    }else if (totalPounds >= 5 && totalPounds <= 20){
+        shippingCost = 10.00;
+    }else if (totalPounds > 20){
+        shippingCost = 8.00 + .10 * totalPounds;
+    }
+
+    printf("Total Charge: %lf", orderCost);
+    printf("Discount: %lf", orderCost * DISCOUNT);
+    printf("Shipping cost: ");
+    printf("Grand Total: ");
+
+
+
+}
+
+void print_choice(){
+
+    printf("a. artichokes\n");
+    printf("b. beets\n");
+    printf("c. carrots\n");
+    printf("q. quit\n");
+
+}
+
+void purchase_info(){
+
+    printf("Cost per pound: ");
+    printf("Pounds ordered: ");
+    
 }
