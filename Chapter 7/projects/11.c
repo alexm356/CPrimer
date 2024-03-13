@@ -101,10 +101,17 @@ int main(){
         shippingCost = 8.00 + .10 * totalPounds;
     }
 
-    printf("Total Charge: %lf", orderCost);
-    printf("Discount: %lf", orderCost * DISCOUNT);
-    printf("Shipping cost: ");
-    printf("Grand Total: ");
+     double finalDiscount;
+
+
+    if (discount == 1){
+        finalDiscount = 0.05;
+    }
+
+    printf("Total Charge: %lf\n", orderCost);
+    printf("Discount: %lf\n", finalDiscount);
+    printf("Shipping cost: %lf\n", shippingCost);
+    printf("Grand Total: %lf\n", ((orderCost * finalDiscount) + shippingCost));
 
 
 
