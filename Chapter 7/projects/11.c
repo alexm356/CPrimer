@@ -34,7 +34,7 @@ void print_choice();
 int main(){ 
 
     char ch;
-    float totalCost, totalCharges, discoun;
+    float totalCost, totalCharges;
     int artichokes, beets, carrots, discount;
 
     double artFinal, carFinal, beetFinal;
@@ -85,6 +85,8 @@ int main(){
     beetFinal = beets * BEET;
     carFinal = carrots * CARROT;
 
+    totalPounds = artichokes + beets + carrots;
+
     orderCost = artFinal + beetFinal + carFinal;
 
     if(orderCost > 100.00){
@@ -111,7 +113,18 @@ int main(){
     printf("Total Charge: %lf\n", orderCost);
     printf("Discount: %lf\n", finalDiscount);
     printf("Shipping cost: %lf\n", shippingCost);
-    printf("Grand Total: %lf\n", ((orderCost * finalDiscount) + shippingCost));
+    printf("Grand Total: %lf\n", (orderCost -(orderCost * finalDiscount) + shippingCost));
+
+
+    printf("************************************************\n");
+
+
+    printf("Purchase info: \n");
+    printf("Cost per pound: Artichokes: %lf, Beets: %lf, Carrots: %lf\n", artFinal, beetFinal, carFinal);
+    printf("Total pounds ordered: %lf\n", totalPounds);
+    printf("Discount: %lf\n", finalDiscount);
+    printf("Shipping Charge: %lf\n", shippingCost);
+    printf("Grand Total: %lf\n", (orderCost -(orderCost * finalDiscount) + shippingCost));
 
 
 
@@ -126,9 +139,3 @@ void print_choice(){
 
 }
 
-void purchase_info(){
-
-    printf("Cost per pound: ");
-    printf("Pounds ordered: ");
-    
-}
