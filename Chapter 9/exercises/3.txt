@@ -1,0 +1,6 @@
+a. char n_to_char(int number)
+
+
+b. int digits(double value, int arh)
+
+c. int random()

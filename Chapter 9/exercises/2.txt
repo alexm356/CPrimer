@@ -1,0 +1,5 @@
+a. int donut(int argument);
+
+b.int gear(int a, int b);
+
+c. double stuff_it(double a, double *address)

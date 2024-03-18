@@ -1,0 +1,6 @@
+void salami (int num){ // add param type
+
+    int count; // remove num declaration, already declared
+
+    for(count = 1; count <= num; num++)
+}
